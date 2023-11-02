@@ -26,6 +26,9 @@ public static void ping() {
 
 // 1: Stack diagram: ping (vacío)
 // 2: 
+
 No, I wug.
+
 You wugga wug.
+
 I wug.
