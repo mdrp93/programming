@@ -1,6 +1,7 @@
 
 Ch04
 
+
 Exercise 3: Answer the following questions without running the program on a computer.
 
 1 - Draw a stack diagram that shows the state of the program the first time ping is invoked.
