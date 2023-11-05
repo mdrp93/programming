@@ -5,7 +5,7 @@ public class Multadd {
 
 
 public static double multadd(double a, double b, double c){
-System.err.println(a*b+c);
+System.out.println(a*b+c);
 return 0.0;}
 
 public static void expSum(double x) {
