@@ -13,22 +13,30 @@ public class MyGuess2 {
      }
 
 public static void main (String[] args){
+
 Scanner in = new Scanner(System.in); 
 Random random = new Random();
 int number = (int) random.nextInt(50)+1;
 int k = 3;
 
-
 System.out.println("Hello, what is your name?");   
 String name=in.nextLine();
- System.out.println("Well, "+name+" I'm MAGICJAVA. ");
+System.out.println("Well, "+name+" I'm MAGICJAVA. ");
 System.out.println();
 System.out.print( "And I'm thinking of a number between 1 and 50 (including both), ");
 System.out.println( "CAN YOU GUESS IT?");
 System.out.println();
 System.out.println( "You have " + k+ " tries to guess."); 
- System.out.println();
+System.out.println();
 
+
+// check the format
+if (!in.hasNextDouble()) {
+    String word = in.next();
+    System.err.println(word + " is not a number");
+    return;
+}
+//conditions
  while (k>1) {
     
     System.out.print( "     Insert a number: ");
@@ -91,6 +99,7 @@ System.out.println( "You have " + k+ " tries to guess.");
             System.out.println("You were off by: " + (guess - number)); 
             System.out.println();
             System.out.println("Don't worry, maybe next time you will guess!");
+            System.out.println();
             break;
             }
 
