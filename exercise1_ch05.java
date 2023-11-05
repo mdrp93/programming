@@ -12,3 +12,7 @@ public class exercise1_ch05 {
     }
        
 }
+
+
+//Ejercicio 1 : Vuelva a escribir el siguiente código utilizando una sola ifdeclaración:
+//if (x > 0) { if (x < 10) { System.out.println( "número positivo de un solo dígito." ); } }
