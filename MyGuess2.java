@@ -12,8 +12,6 @@ public class MyGuess2 {
          return 0;
      }
 
-
-    
 public static void main (String[] args){
 Scanner in = new Scanner(System.in); 
 Random random = new Random();
