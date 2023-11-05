@@ -30,12 +30,6 @@ System.out.println( "You have " + k+ " tries to guess.");
 System.out.println();
 
 
-// check the format
-if (!in.hasNextDouble()) {
-    String word = in.next();
-    System.err.println(word + " is not a number");
-    return;
-}
 //conditions
  while (k>1) {
     
