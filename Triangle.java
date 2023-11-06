@@ -8,15 +8,32 @@ public static boolean isTriangle(int side1, int side2, int side3) {
         return side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1; } 
         //Mathematically, for a triangle with sides of lengths a, b, and c, the triangular inequality can be written as: (a + b > c b + c > a c + a > b)
 
-public static void main(String[] args) { Scanner scanner = new Scanner(System.in);
+public static void main(String[] args) { Scanner in = new Scanner(System.in);
     
     int side1, side2, side3;
     
-    System.out.print("Enter the first side of the triangle: "); side1 = scanner.nextInt();
+    System.out.print("Enter the first side of the triangle: "); 
+    if (!in.hasNextInt()) {
+        String word = in.next();
+        System.err.println("ERROR IMPUT: "+word + " is not a number");
+        return;
+    }
+    side1 = in.nextInt();
     
-    System.out.print("Enter the second side of the triangle: "); side2 = scanner.nextInt();
+    System.out.print("Enter the second side of the triangle: "); 
+    if (!in.hasNextInt()) {
+        String word = in.next();
+        System.err.println("ERROR IMPUT: "+word + " is not a number");
+        return;
+    }side2 = in.nextInt();
     
-    System.out.print("Enter the third side of the triangle: "); side3 = scanner.nextInt();
+    System.out.print("Enter the third side of the triangle: "); 
+    if (!in.hasNextInt()) {
+        String word = in.next();
+        System.err.println("ERROR IMPUT: "+word + " is not a number");
+        return;
+    }
+    side3 = in.nextInt();
     
     if (validateLengths(side1, side2, side3)) { 
         
