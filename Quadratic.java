@@ -12,21 +12,21 @@ public class Quadratic {
         int c = scanner.nextInt();
 
         // Compute the discriminant
-        int discriminant = (b * b) - (4 * a * c);
+        int d = (b * b) - (4 * a * c);
 
       
-        if (discriminant < 0) {
+        if (d < 0) {
             System.out.println("The equation has no real roots.");
         }
         // Check if the equation has one solution
-        else if (discriminant == 0) {
+        else if (d == 0) {
             double x = -b / (2.0 * a);
             System.out.println("The equation has one root: " + x);
         }
         // Compute and display the two solutions if the equation has two solutions
         else {
-            double x1 = (-b + Math.sqrt(discriminant)) / (2.0 * a);
-            double x2 = (-b - Math.sqrt(discriminant)) / (2.0 * a);
+            double x1 = (-b + Math.sqrt(d)) / (2.0 * a);
+            double x2 = (-b - Math.sqrt(d)) / (2.0 * a);
             System.out.println("The equation has two roots: " + x1 + " and " + x2);
         }
     }
