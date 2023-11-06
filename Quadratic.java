@@ -4,31 +4,31 @@ public class Quadratic {
     public static void main(String[] args) {
         // Prompt the user to input values for a, b, and c
         Scanner in = new Scanner(System.in);
-         
         System.out.print("Enter the value of a: ");
         if (!in.hasNextInt()) {
-                    String word = in.next();
-                    System.err.println("ERROR IMPUT: "+word + " is not a number");
-                    return;
-                }
+            String word = in.next();
+            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            return;
+        }
+
         int a = in.nextInt();
+
         System.out.print("Enter the value of b: ");
         if (!in.hasNextInt()) {
-                    String word = in.next();
-                    System.err.println("ERROR IMPUT: "+word + " is not a number");
-                    return;
-                }
+            String word = in.next();
+            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            return;}
+            
         int b = in.nextInt();
+
         System.out.print("Enter the value of c: ");
         if (!in.hasNextInt()) {
-                    String word = in.next();
-                    System.err.println("ERROR IMPUT: "+word + " is not a number");
-                    return;
-                }
+            String word = in.next();
+            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            return;
+        }
         int c = in.nextInt();
 
-       
-    
         // Compute the discriminant
         int d = (b * b) - (4 * a * c);
 
@@ -37,7 +37,7 @@ public class Quadratic {
             System.out.println("The equation has no real roots.");
         }
         // Check if the equation has one solution
-        else if (d == 0) {
+        else if (d== 0) {
             double x = -b / (2.0 * a);
             System.out.println("The equation has one root: " + x);
         }

@@ -38,6 +38,11 @@ public static void main(String[] args) {
         
         System.out.print("Please insert number to calculate x in this equation:[xe^(-x) + sqrt(1 - e^(-x))] \n x = ");
         Scanner in = new Scanner(System.in); 
+        if (!in.hasNextInt()) {
+            String word = in.next();
+            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            return;
+        }
         double x = in.nextInt();
         expSum (x);
 
