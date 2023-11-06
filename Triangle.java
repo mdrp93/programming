@@ -1,6 +1,12 @@
 import java.util.Scanner;
 
 public class Triangle {
+public static boolean validateLengths(int side1, int side2, int side3) { 
+        return side1 > 0 && side2 > 0 && side3 > 0; } //All sides must be greater than zero--> with && the result must be true.
+    
+public static boolean isTriangle(int side1, int side2, int side3) { 
+        return side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1; } 
+        //Mathematically, for a triangle with sides of lengths a, b, and c, the triangular inequality can be written as: (a + b > c b + c > a c + a > b)
 
 public static void main(String[] args) { Scanner scanner = new Scanner(System.in);
     
@@ -22,12 +28,7 @@ public static void main(String[] args) { Scanner scanner = new Scanner(System.in
     else { System.out.println("Error: lengths must be positive integers and non-zero."); 
     }}
     
-    public static boolean validateLengths(int side1, int side2, int side3) { 
-        return side1 > 0 && side2 > 0 && side3 > 0; } //All sides must be greater than zero--> with && the result must be true.
     
-    public static boolean isTriangle(int side1, int side2, int side3) { 
-        return side1 + side2 > side3 && side1 + side3 > side2 && side2 + side3 > side1; } 
-        //Mathematically, for a triangle with sides of lengths a, b, and c, the triangular inequality can be written as: (a + b > c b + c > a c + a > b)
     }
 
 
