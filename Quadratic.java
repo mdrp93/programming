@@ -3,14 +3,32 @@ import java.util.Scanner;
 public class Quadratic {
     public static void main(String[] args) {
         // Prompt the user to input values for a, b, and c
-        Scanner scanner = new Scanner(System.in);
+        Scanner in = new Scanner(System.in);
+         
         System.out.print("Enter the value of a: ");
-        int a = scanner.nextInt();
+        if (!in.hasNextInt()) {
+                    String word = in.next();
+                    System.err.println("ERROR IMPUT: "+word + " is not a number");
+                    return;
+                }
+        int a = in.nextInt();
         System.out.print("Enter the value of b: ");
-        int b = scanner.nextInt();
+        if (!in.hasNextInt()) {
+                    String word = in.next();
+                    System.err.println("ERROR IMPUT: "+word + " is not a number");
+                    return;
+                }
+        int b = in.nextInt();
         System.out.print("Enter the value of c: ");
-        int c = scanner.nextInt();
+        if (!in.hasNextInt()) {
+                    String word = in.next();
+                    System.err.println("ERROR IMPUT: "+word + " is not a number");
+                    return;
+                }
+        int c = in.nextInt();
 
+       
+    
         // Compute the discriminant
         int d = (b * b) - (4 * a * c);
 
