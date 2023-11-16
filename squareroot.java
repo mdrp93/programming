@@ -1,4 +1,7 @@
 public class squareroot{
+
+    //exercise 2 - chapter 06
+
     final static double MIN= 0.001; 
 
     public static double squareRoot(double a){
@@ -23,3 +26,6 @@ public class squareroot{
         }
     }
 }
+
+
+//incompleto!! the program no works
