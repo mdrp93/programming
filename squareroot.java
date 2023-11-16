@@ -1,4 +1,4 @@
-public class Ex06 {
+public class squareroot{
     final static double MIN= 0.001; 
 
     public static double squareRoot(double a){
@@ -15,7 +15,6 @@ public class Ex06 {
     return x0;
         }
     
-
     
     public static void main (String[] args){
         double x [] = {9, 16, 25, 49, 64 };

@@ -1,33 +1,48 @@
 import java.util.Scanner;
 
-
 public class numVocales{
 
     public static int numeroVocales(String cadena) {
         int cont = 0;
 
-        for (int i = 0; i < cadena.length(); i++) {
-            char caracter = cadena.charAt(i);
+        for (int i = 0; i < cadena.length(); i++) { //I use for a loop to iterate through each character in the string.  It starts from the index 0 until it is the length of the string.  
+            char caracter = cadena.charAt(i); //charAt() method to get the character at the current index
 
-            if (Character.toLowerCase(caracter) == 'a' || Character.toLowerCase(caracter) == 'e' ||
-                Character.toLowerCase(caracter) == 'i' || Character.toLowerCase(caracter) == 'o' ||
+            if (Character.toLowerCase(caracter) == 'a' || Character.toLowerCase(caracter) == 'e' || //it converts the character to lowercase and compares the lowercase character to 'a', 'e', 'i', 'o', and 'u' to check if it is a vowel.
+                Character.toLowerCase(caracter) == 'i' || Character.toLowerCase(caracter) == 'o' || // because it not equal 'A' and 'a'.
                 Character.toLowerCase(caracter) == 'u') {
                 cont++;
             }
         }
+        return cont;   //that return represents the total count of vowels in the string.
 
-        return cont;
-            
         }
-     public static void main(String[] args) {
-        
+    
+    public static boolean onlyLetters(String palabra) { //The purpose of this method is to check if a given string contains only letters.
+            for (int i = 0; i < palabra.length(); i++) {
+                if (!Character.isLetter(palabra.charAt(i))) { //with hte "Character.isLetter" method we can check if the current character is a letter.
+                    return false;
+                }
+            }
+            return true;
+        }
+
+   
+    public static void main(String[] args) {
+
         Scanner in = new Scanner(System.in);
+        String word;
 
-        System.out.println("Insert a word: ");
-        String palabra = in.nextLine();
-        int numero = numeroVocales(palabra);
-        System.out.println("Number of vowels: " + numero);
-        }
-    
+        System.out.print("Insert a word: ");
+        word = in.nextLine();
+
+            while (!onlyLetters(word)) {    //while onlyLetter is false
+                System.err.println("ERROR INPUT: " +word+ " is not a word or is unexpected character.");
+                System.out.print("Insert a word: ");
+                word = in.nextLine(); //the loop will continue running until the user enters a word that only contains letters.
+             }
+
+        int number = numeroVocales(word);  //number is a total of vowels
+        System.out.println("Number of vowels: " + number);
     }
-    
+}
