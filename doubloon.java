@@ -1,3 +1,5 @@
+//Exercise 6.5 java
+
 import java.util.Scanner;
 
 public class doubloon {
@@ -11,20 +13,20 @@ public class doubloon {
         return true;
     }
 
-    public static boolean isDoubloon(String word) {
+    public static boolean isDoubloon(String word) { 
         
-        word = word.toLowerCase();
+        word = word.toLowerCase(); //the function converts the word to lowercase 
         int len = word.length(); 
-        int count = 0;
-        boolean retVal = false;
+        int count = 0;  //This variable is used to count how many times a letter is repeated in the word.
+        boolean retVal = false; //will be used to store the final result of whether the word is a doubloon or not.
 
-        for (int i = 0; i < len; i++) { 
+        for (int i = 0; i < len; i++) {  //In each iteration, the current letter of the word is obtained using the "charAt(i)" where "i" is the index of the current letter.
             char letra = word.charAt(i); 
-            for (int j = i + 1; j < len; j++) { 
-                if (letra == word.charAt(j)) { 
-                    count++; } } }
+            for (int j = i + 1; j < len; j++) { //remaining letters after the current letter.
+                if (letra == word.charAt(j)) { //the current letter is compared to the letter at index "j".
+                    count++; } } } //If the two letters are the same, the variable "count" is incremented by one.
         
-       if(count == len / 2) {retVal=true; }
+       if(count == len / 2) {retVal=true; } //checked if "count" is equal to half the length of the word. If so, true is assigned to retVal.
        
        return retVal;}
     
@@ -33,17 +35,17 @@ public class doubloon {
         int equals = 0;
         
             for (int i = 0; i < palabra.length(); i++) {
-                char letra = palabra.charAt(i);
+                char letra = palabra.charAt(i); //variable "letter" of type char is declared that stores the letter in position "i" of the word.
                 boolean same = false;
         
-                for (int j = i + 1; j < palabra.length(); j++) {
-                    if (letra == palabra.charAt(j)) {
+                for (int j = i + 1; j < palabra.length(); j++) { //Another "for" loop is started to compare the current letter with the next letters in the word.
+                    if (letra == palabra.charAt(j)) { // If the letter is equal to any of the following letters, the value of "same" is changed to true and the loop is broken.
                         same = true;
                         break;
                     }
                 }
-            if (same) {equals++;} 
-            else {dif++;}
+            if (same) {equals++;}  //If "same" is true, the "equals" counter is incremented.
+            else {dif++;} //If "same" is false, the "dif" counter is incremented.
             }
         
         System.out.println("The word \"" + palabra + "\" contains " + dif + " different letters and " + equals+" repeated letters.");
