@@ -1,4 +1,4 @@
-//Exercise 6.3 java
+//Exercise 6.4 java
  
 import java.util.Scanner;
 
