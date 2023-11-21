@@ -72,9 +72,10 @@ public class squareroot{
     double x [] ={ a, b, c, d, e}; //value for string numbers --> calculate the sqrt
 
     for (int i=0; i<5; i++) { //iteratition
-        System.out.printf("sqrt(%.2f) is %.2f\n", x[i], squareRoot(x[i]));   //A floating point number with two decimal places will be printed.
-                                                                                    //x[i] is the value of an element in an array named x, at position i
-                                                                                    //calculates the square root of x[i].
+        System.out.printf("sqrt(%.2f) is %.2f\n", x[i], squareRoot(x[i]));   
+        
+                //A floating point number with two decimal places will be printed.
+                //x[i] is the value of an element in an array named x, at position i and calculates the square root of x[i].
     }
     }
 }
