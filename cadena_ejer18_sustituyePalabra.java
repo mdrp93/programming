@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class ejer18_sustituyePalabra{
+public class cadena_ejer18_sustituyePalabra{
         
     public static String sustituyePalabra(String cadena, String palabra1, String palabra2) {
         cadena=cadena.toUpperCase(); //paso todo a mayúsculas para evitar problemas de búsqueda
