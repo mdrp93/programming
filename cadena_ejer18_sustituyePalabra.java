@@ -27,7 +27,10 @@ public class cadena_ejer18_sustituyePalabra{
       
         String solution = sustituyePalabra(frase, palabra1, palabra2);
         System.out.println(solution);
+            
+        frase.replaceAll(palabra1,palabra2);
         }
     }
-    
 
+
+   
