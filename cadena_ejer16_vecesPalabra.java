@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class cadenas_ejer16_vecesPalabra{
+public class cadena_ejer16_vecesPalabra{
         
            
     public static void main(String[] args) {
