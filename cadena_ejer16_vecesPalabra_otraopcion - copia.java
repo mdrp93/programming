@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class cadena_ejer16_vecesPalabra{
+public class cadena_ejer16_vecesPalabra_otraopcion{
         
   public static int vecesPalabra(String cadena, String palabra) {
         // Convertir la cadena y la palabra a minúsculas para hacer la comparación
@@ -8,12 +8,13 @@ public class cadena_ejer16_vecesPalabra{
         palabra = palabra.toLowerCase();
         
         int contador = 0;
-        int indice = 0;
+        
         
         // Iterar mientras se encuentre la palabra en la cadena con indexOf. 
-        while ((indice = cadena.indexOf(palabra, indice)) != -1) {  // El método indexOf devuelve la posición de la palabra en la cadena, o -1 si no se encuentra--> el -1 es como si fuera un false. 
+        while ((cadena.indexOf(palabra)) >-1) { 
+            cadena=cadena.substring(cadena.indexOf(palabra)+palabra.length(), cadena.length()); // El método indexOf devuelve la posición la palabra en la cadena, o -1 si no se encuentra el menos uno es como si fuera un false. 
             contador++;
-            indice += palabra.length(); //sigue desde la siguiente posición para no volver a contar lo anterior.
+            
         }
         
         return contador;
