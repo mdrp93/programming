@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class cadena_ejer16_vecesPalabracopy{
+public class cadena_ejer16_vecesPalabra_otraopcion{
         
   public static int vecesPalabra(String cadena, String palabra) {
         // Convertir la cadena y la palabra a minúsculas para hacer la comparación
