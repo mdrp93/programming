@@ -7,7 +7,7 @@ public class cadena_ejer18_sustituyePalabra{
         palabra1=palabra1.toUpperCase();
         palabra2=palabra2.toUpperCase();
 
-        String resultado = cadena.replace(palabra1, palabra2); //uso la función replace que cambia una palabra por otra.
+        String resultado = cadena.replaceAll(palabra1, palabra2); //uso el método .replace que cambia una palabra por otra.
        
           
         return resultado;
