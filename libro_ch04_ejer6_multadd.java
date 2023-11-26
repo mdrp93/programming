@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Multadd {
+public class libro_ch04_ejer6_multadd {
 
 
 public static double multadd(double a, double b, double c){

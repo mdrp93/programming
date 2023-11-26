@@ -1,4 +1,4 @@
-public class zippo {
+public class libro_ch04_ejer2_zippo {
     public static void main(String[] args) {
         zippo("rattle", 13); 
     }

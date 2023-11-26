@@ -1,4 +1,4 @@
-public class Time {
+public class libro_ch02_ejer3_time {
 
     public static void main(String[] args) {
         int hour = 20;

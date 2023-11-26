@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Triangle {
+public class libro_ch05_ejer7_triangle {
 public static boolean validateLengths(int side1, int side2, int side3) { 
         return side1 > 0 && side2 > 0 && side3 > 0; } //All sides must be greater than zero--> with && the result must be true.
     

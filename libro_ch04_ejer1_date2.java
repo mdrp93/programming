@@ -1,6 +1,6 @@
 
 
-public class date2 {
+public class libro_ch04_ejer1_date2 {
 
 public static void printAmerican(String day, String month, int date, int year) {
     System.out.println(day+","+" "+month+" "+date+" "+year);

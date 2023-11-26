@@ -2,7 +2,7 @@
  
 import java.util.Scanner;
 
-public class isAbecedarian{
+public class libro_ch06_ejer4_isAbecedarian{
 
     public static boolean onlyLetters(String palabra) { //The purpose of this method is to check if a given string contains only letters.
         for (int i = 0; i < palabra.length(); i++) {

@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Quadratic {
+public class libro_ch05_ejer6_quadratic {
     public static void main(String[] args) {
         // Prompt the user to input values for a, b, and c
         Scanner in = new Scanner(System.in);

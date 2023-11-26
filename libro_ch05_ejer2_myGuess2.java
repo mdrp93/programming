@@ -3,7 +3,7 @@ import java.util.Random;
 
 //Exercise 2. Chapter 05. Rewritte Guess My number.
 
-public class MyGuess2 {
+public class libro_ch05_ejer2_myGuess2 {
     public static int mirror (int suppose, int number) {
         if(suppose<number){
          System.out.println("The guess is too LOW");}

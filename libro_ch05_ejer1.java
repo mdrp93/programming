@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class exercise1_ch05 {
+public class libro_ch05_ejer1 {
 
        public static void main (String[] args){
         

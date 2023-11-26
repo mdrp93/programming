@@ -3,7 +3,7 @@
 
 import java.util.Scanner;
 
-public class Fermat{
+public class libro_ch05_ejer3_fermat{
   public static void main(String[] args) { 
     Scanner in = new Scanner(System.in); 
     

@@ -1,4 +1,4 @@
-public class zoop {
+public class libro_ch04_ejer5_zoop {
     public static void zoop(String fred, int bob) {
         System.out.println(fred);
         if (bob == 5) {
