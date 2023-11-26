@@ -29,4 +29,3 @@ public class cadena_ejer12_quitaCaracter{
         
         }
     }
-
