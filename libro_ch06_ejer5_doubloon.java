@@ -62,7 +62,7 @@ public class libro_ch06_ejer5_doubloon {
         String word = in.nextLine();
         System.out.println();
             while (!onlyLetters(word)) {    //while onlyLetter is false
-                System.err.println("ERROR INPUT: " +word+ " is not a word or is unexpected character.");
+                System.err.println("IMPUT ERROR: " +word+ " is not a word or is unexpected character.");
                 System.out.print("Insert a word: ");
                 word = in.nextLine(); //the loop will continue running until the user enters a word that only contains letters.
             }

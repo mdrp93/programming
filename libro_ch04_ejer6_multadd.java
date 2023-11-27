@@ -40,7 +40,7 @@ public static void main(String[] args) {
         Scanner in = new Scanner(System.in); 
         if (!in.hasNextInt()) {
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             return;
         }
         double x = in.nextInt();

@@ -15,7 +15,7 @@ public static void main(String[] args) { Scanner in = new Scanner(System.in);
     System.out.print("Enter the first side of the triangle: "); 
     if (!in.hasNextInt()) {
         String word = in.next();
-        System.err.println("ERROR IMPUT: "+word + " is not a number");
+        System.err.println("IMPUT ERROR: "+word + " is not a number");
         return;
     }
     side1 = in.nextInt();
@@ -23,14 +23,14 @@ public static void main(String[] args) { Scanner in = new Scanner(System.in);
     System.out.print("Enter the second side of the triangle: "); 
     if (!in.hasNextInt()) {
         String word = in.next();
-        System.err.println("ERROR IMPUT: "+word + " is not a number");
+        System.err.println("IMPUT ERROR: "+word + " is not a number");
         return;
     }side2 = in.nextInt();
     
     System.out.print("Enter the third side of the triangle: "); 
     if (!in.hasNextInt()) {
         String word = in.next();
-        System.err.println("ERROR IMPUT: "+word + " is not a number");
+        System.err.println("IMPUT ERROR: "+word + " is not a number");
         return;
     }
     side3 = in.nextInt();

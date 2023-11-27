@@ -7,7 +7,7 @@ public class libro_ch05_ejer6_quadratic {
         System.out.print("Enter the value of a: ");
         if (!in.hasNextInt()) {
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             return;
         }
 
@@ -16,7 +16,7 @@ public class libro_ch05_ejer6_quadratic {
         System.out.print("Enter the value of b: ");
         if (!in.hasNextInt()) {
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             return;}
             
         int b = in.nextInt();
@@ -24,7 +24,7 @@ public class libro_ch05_ejer6_quadratic {
         System.out.print("Enter the value of c: ");
         if (!in.hasNextInt()) {
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             return;
         }
         int c = in.nextInt();

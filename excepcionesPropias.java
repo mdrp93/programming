@@ -19,7 +19,7 @@ public class excepcionesPropias {
         //System.out.println();//añadir lo que se quiera ;
         //String frase = in.nextLine();   
            // while(!letrasynumeros(frase)) {
-           // System.err.println("ERROR INPUT: " +frase+ " includes unexpected character.");
+           // System.err.println("IMPUT ERROR: " +frase+ " includes unexpected character.");
               //  System.out.print(("Escribe la palabra que se va a sustituir: "));
                 //frase= in.nextLine();
       //  }
@@ -40,7 +40,7 @@ public static boolean onlyLetters(String palabra) { //The purpose of this method
 //String word = in.nextLine();
        // System.out.println();
            // while (!onlyLetters(word)) {    //while onlyLetter is false
-               // System.err.println("ERROR INPUT: " +word+ " is not a word or is unexpected character.");
+               // System.err.println("IMPUT ERROR: " +word+ " is not a word or is unexpected character.");
                 //System.out.print("Insert a word: ");
                 //word = in.nextLine(); //the loop will continue running until the user enters a word that only contains letters.
             //}

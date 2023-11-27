@@ -13,7 +13,6 @@ public class libro_ch06_ejer2_squareroot{
         double x0 = a/2; 
         double x1 = 0;
         
-
         while (Math.abs(x0-x1)>MIN){
             x1 = x0;
             x0= (x0 + a/x0)/2;       
@@ -64,7 +63,7 @@ public class libro_ch06_ejer2_squareroot{
     System.out.print("Number 5: ");
         while (!in.hasNextInt()) {
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             System.out.print("Number 5: ");
         }
        double e = in.nextInt(); 

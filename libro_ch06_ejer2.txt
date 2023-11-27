@@ -31,7 +31,7 @@ public class squareroot{
     System.out.print("Number 1: ");
         while (!in.hasNextInt()) {   //The loop will keep running until the user inputs a numerical value. Once the characters are numeric, the program will continue executing
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             System.out.print("Number 1: ");
         }
         double a = in.nextInt();    
@@ -39,7 +39,7 @@ public class squareroot{
     System.out.print("Number 2: ");
         while (!in.hasNextInt()) {
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             System.out.print("Number 2: ");
         }
         double b = in.nextInt();      
@@ -48,7 +48,7 @@ public class squareroot{
     System.out.print("Number 3: ");
         while (!in.hasNextInt()) {
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             System.out.print("Number 3: ");
         }
         double c = in.nextInt(); 
@@ -56,7 +56,7 @@ public class squareroot{
     System.out.print("Number 4: ");
         while (!in.hasNextInt()) {
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             System.out.print("Number 4: ");
         }
       double d = in.nextInt();
@@ -64,7 +64,7 @@ public class squareroot{
     System.out.print("Number 5: ");
         while (!in.hasNextInt()) {
             String word = in.next();
-            System.err.println("ERROR IMPUT: "+word + " is not a number");
+            System.err.println("IMPUT ERROR: "+word + " is not a number");
             System.out.print("Number 5: ");
         }
        double e = in.nextInt(); 
