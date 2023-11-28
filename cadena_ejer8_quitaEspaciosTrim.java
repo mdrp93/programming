@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class cadena_ejer8_quitaEspacios {
+public class cadena_ejer8_quitaEspaciosTrim {
 
     public static String quitaEspaciosTrim(String cadena) {
         int inicio = 0;
