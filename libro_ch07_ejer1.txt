@@ -1,0 +1,56 @@
+Exercise 1  
+The purpose of this exercise is to practice reading code and recognizing the traversal 
+patterns in this chapter. The following methods are hard to read, because instead of 
+using meaningful names for the variables and methods, they use names of fruit.
+
+For each method, write one sentence that describes what the method does, without getting 
+into the details of how it works. And for each variable, identify the role it plays.
+
+    
+    public static int banana(int[] a) {
+        int kiwi = 1;
+        int i = 0;
+        while (i < a.length) {
+            kiwi = kiwi * a[i];
+            i++;
+        }
+        return kiwi;
+    }
+
+//This method multiplies all the elements in an array and returns the result.
+
+//The variable "yo" is a counter that increases in each iteration.
+
+//The variable "kiwi" is used to store and sum the partial results of multiplying all the elements of an array. 
+That is, the value of "kiwi" is updated in each iteration of the multiplication process, accumulating the partial 
+result of multiplying an element of the array with the result obtained so far.
+
+
+  
+    public static int grapefruit(int[] a, int grape) {
+        for (int i = 0; i < a.length; i++) {
+            if (a[i] == grape) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
+//This method searches for the number "grape" in an array of integers and returns the position where it is found, if found, or returns -1 if it is not found.
+//The variable grape "uva" is used to compare each element of the array "a".
+
+
+    
+    public static int pineapple(int[] a, int apple) {
+        int pear = 0;
+        for (int pine: a) {
+            if (pine == apple) {
+                pear++;
+            }
+        }
+        return pear;
+    }
+
+//This method counts how many times the value "apple" appears in the array "a" and returns that number.
+//The variable "apple" is used to compare how many times it appears in the array. It is the value to search for within the array "a".
+//The variable "pear" counts the number of times the value "apple" appears in the array "a".
