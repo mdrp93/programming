@@ -1,4 +1,3 @@
-import java.util.Scanner;
 
 public class cadena_ejer20_quitaTodosEspacios {
   

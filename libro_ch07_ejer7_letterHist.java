@@ -2,6 +2,13 @@ import java.util.Scanner;
 
 public class libro_ch07_ejer7_letterHist {
 
+    public static boolean onlyLetters(String palabra) { //The purpose of this method is to check if a given string contains only letters.
+        for (int i = 0; i < palabra.length(); i++) {
+            if (!Character.isLetter(palabra.charAt(i))) { //with hte "Character.isLetter" method we can check if the current character is a letter.
+                return false;
+            }
+        }
+        return true;}
     public static int[] letterHist(String word) {
         
         int[] histogram = new int[26]; // Crear el histograma con 26 elementos (para las letras desde a hasta z)
@@ -24,6 +31,12 @@ public class libro_ch07_ejer7_letterHist {
         Scanner in = new Scanner (System.in);
         System.out.print("Enter the word you want to analyze under a histogram: ");
         String word = in.nextLine();
+            while (!onlyLetters(word)) {    //while onlyLetter is false
+                System.err.println("IMPUT ERROR:" +word+ " is not a word or is unexpected character.");
+                System.out.print("Insert a word: ");
+                word = in.nextLine(); //the loop will continue running until the user enters a word that only contains letters.
+            }
+        
         int[] histogram = letterHist(word);
     
         System.out.print("The histogram for \""+word+"\" is: ");
