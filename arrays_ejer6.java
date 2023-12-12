@@ -23,9 +23,10 @@ public class arrays_ejer6 {
             cadena[i]= in.nextInt();
             index ++;
         }
-    
+    in.close();
+
     System.out.println();
-     System.out.print("Valores de la cadena introducidos: ");
+    System.out.print("String values entered: ");
     System.out.print("{" + cadena[0]);
         for (int i = 1; i < cadena.length; i++) {
             System.out.print(", " + cadena[i]);
@@ -34,13 +35,13 @@ public class arrays_ejer6 {
     
     int ultimo = cadena[cadena.length - 1];                 //nueva cadena en la que tomamos como referencia la cadena original con ultimo elemento. 
         
-        for (int i = cadena.length-1; i > 0; i--)  {          //cadena en reverso
+        for (int i = cadena.length-1; i > 0; i--)  {          //cadena en reverso ; rotación;
             cadena[i] = cadena[i - 1];                   //asignamos el valor de un elemento anterior  al actual.
         }
        cadena[0] = ultimo;
 
     System.out.println();  
-    System.out.print("Valores de la cadena rotados en una posición: "); 
+    System.out.print("Values of the string rotated by one position: "); 
     System.out.print("{" + cadena[0]);
        for (int i = 1; i < cadena.length; i++) {            //igualar a uno para que el bucle comience en el segundo lugar del index no en el cero. el cero se imprime en la primera iteracion.    
            System.out.print(", " + cadena[i]);
@@ -54,7 +55,6 @@ public class arrays_ejer6 {
         } 
 
 in.close();
-
 }
 }
 
