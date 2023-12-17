@@ -38,12 +38,14 @@ public class libro_ch07_ejer7_letterHist {
             }
         
         int[] histogram = letterHist(word);
-    
-        System.out.print("The histogram for \""+word+"\" is: ");
+        System.out.println("");
+        System.out.println("The histogram for \""+word+"\" is: \n");
+        System.out.println("Letter \t Times it appears");
+         System.out.println("______\t ________________\n");
         // Imprimir el histograma
         for (int i = 0; i < histogram.length; i++) {
             char letter = (char) (i + 'a');
-            System.out.print(letter + ":" + histogram[i]+" ");
+            System.out.println("  "+letter + "\t\t" + histogram[i]+" ");
         }
     }
     }

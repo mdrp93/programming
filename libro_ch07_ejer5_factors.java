@@ -10,9 +10,6 @@ public class libro_ch07_ejer5_factors {
         }
         return true;
     }
-    
-
-            
 
 
     public static void main(String[] args) {
