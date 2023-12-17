@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class libro_ch07_ejer8_anagrams {
 
     public static String quitaEspaciosSobrantes(String cadena) {
-        String resultado = cadena.trim(); // Eliminar espacios delante y detrás
-        resultado = resultado.replaceAll("\\s+", " "); // Dejar solo un espacio entre las palabras
+        String resultado = cadena.trim(); //Remove spaces in front and behind
+        resultado = resultado.replaceAll("\\s+", " "); 
         
         return resultado;
 
