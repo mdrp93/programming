@@ -1,0 +1,10 @@
+naranja
+fresa
+mango
+kiwi
+chirimoya
+papaya
+limón
+plátano
+tomate
+piña
