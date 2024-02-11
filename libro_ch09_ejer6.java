@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class libro_ch09_ejer6 {
     
         // Encapsulated method
@@ -17,20 +19,22 @@ public class libro_ch09_ejer6 {
         }
 
         // Generalized method
-        public static int countMatchingCharacters(String s, char opening, char closing) {
+        public static int countMatchingCharacters(String s) {
             int count = 0;
 
             for (int i = 0; i < s.length(); i++) {
                 char c = s.charAt(i);
-                if (c == opening) {
+                
+                if (c == '(' || c=='['|| c=='{' ) {
                     count++;
-                } else if (c == closing) {
+                } else if (c == ')' || c==']'|| c=='}') {
                     count--;
                 }
             }
 
             return count;
         }
+
 
         public static void printResultMultiple(String s) {
         int result = countParentheses(s);
@@ -44,8 +48,8 @@ public class libro_ch09_ejer6 {
         }
         }
 
-        public static void printResultGeneralize(String s, char opening, char closing) {
-        int result = countMatchingCharacters(s, opening, closing);
+        public static void printResultGeneralize(String s) {
+        int result = countMatchingCharacters(s);
 
         if (result == 0) {
             System.out.println("The string '" + s + "' has the same number of opening and closing parentheses. CORRECT.");
@@ -72,21 +76,24 @@ public class libro_ch09_ejer6 {
         printResultMultiple(s2);
         printResultMultiple(s3);
         
+        Scanner in = new Scanner(System.in);    
+       
+
         System.out.println();
         System.out.println("______________________________________________________________________________________________________________________\n");
-        System.out.println("   Test the generalized method||\t{{[5 + 3] * 2}}  ||  {{[5 + 3] * 2}  ||  {{[5 + 3] * 2}}}");
+        System.out.println("Insert a fisrt string with parenthesis to check (example: {{[5 + 3] * 2}} )");
+        String s4 = in.nextLine();
+        System.out.println("Insert a second string with parenthesis to check (example: {{[5 + 3] * 2}} )");
+        String s5 = in.nextLine();
+        System.out.println("Insert a third string with parenthesis to check (example: {{[5 + 3] * 2}} )");
+        String s6 = in.nextLine();
+        System.out.println("   Test the generalized method||\t"+s4+"  ||  "+s5+"  ||  "+s6+"  ||  ");
         System.out.println("_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _  _ __ _ _ _ _ _ _ _ _ _ \n");
         
-
-        String s4 = "{{[5 + 3] * 2}}";
-        String s5 = "{{[5 + 3] * 2}";
-        String s6 = "{{[5 + 3] * 2}}}";
-
-
-        printResultGeneralize(s4, '{', '}'); 
-        printResultGeneralize(s5, '{', '}'); 
-        printResultGeneralize(s6, '{', '}'); 
-
+       
+        printResultGeneralize(s4); 
+        printResultGeneralize(s5); 
+        printResultGeneralize(s6);
         System.out.println();
     }
 }
