@@ -1,3 +1,8 @@
+/**
+* Entradas.java
+* Definición de la clase Entradas
+* @author Maria drp
+*/
 package expoCoches;
 
 import java.util.Scanner;
@@ -58,7 +63,7 @@ public class Entradas {
                         System.out.print("Por favor, elija una zona: "); 
                     }
                     int zona = sc.nextInt();
-                    
+
                     if(zona==1||zona==2||zona==3){
                     System.out.println();
 

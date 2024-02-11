@@ -1,10 +1,13 @@
+
+ /**
+* Zona.java
+* Definición de la clase Zona
+* @author Maria drp 
+basado en ejercicio sitio con @author Luis José Sánchez
+*/
 package expoCoches;
 
-    /**
-* Definición de la clase Zona
-*
-* @author Luis José Sánchez
-*/
+
 public class Zona {
     private int entradasPorVender;
         public Zona(int n){
