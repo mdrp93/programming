@@ -1,9 +1,6 @@
-/**
-* Mickey - Mickey 
-* Definición de Mickey
-* @author Maria drp
+/*Exercise 2  
+Modify Mickey.java to draw ears on the ears, and ears on those ears, and more ears all the way down until the smallest ears are only 3 pixels wide. 
 */
-
 
 import java.awt.Canvas;
 import java.awt.Color;
@@ -36,21 +33,19 @@ public class Mickey extends Canvas {
     public void mickey(Graphics g, Rectangle bb) {
         boxOval(g, bb);
 
+        // Si el ancho (o alto) de la oreja es menor o igual a 3, detiene la recursión.
+        if (bb.width <= 3) {
+            return;
+        }
+
         int hx = bb.width / 2;
         int hy = bb.height / 2;
-        Rectangle half = new Rectangle(bb.x, bb.y, hx, hy);
+        
+        Rectangle leftEar = new Rectangle(bb.x - hx / 2, bb.y - hy / 2, hx, hy);
+        Rectangle rightEar = new Rectangle(bb.x + bb.width - hx / 2, bb.y - hy / 2, hx, hy);
 
-        half.translate(-hx/2, -hy/2);       // -50, -50
-        boxOval(g, half);
- 
-        half.translate(0, hy*2);        // 0, 200
-        boxOval(g, half);
-
-        half.translate(hx*2, 0);        // 200, 0
-        boxOval(g, half);
-
-        half.translate(0, -2*hy);       // 0, -200
-        boxOval(g, half);
+        mickey(g, leftEar);
+        mickey(g, rightEar);
     }
-
 }
+   
