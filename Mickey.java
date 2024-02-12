@@ -38,8 +38,8 @@ public class Mickey extends Canvas {
             return;
         }
 
-        int hx = bb.width / 2;
-        int hy = bb.height / 2;
+        int hx = bb.width / 2;  //anchura de instancia bb
+        int hy = bb.height / 2; //altura de la instancia bb
         
         Rectangle leftEar = new Rectangle(bb.x - hx / 2, bb.y - hy / 2, hx, hy);
         Rectangle rightEar = new Rectangle(bb.x + bb.width - hx / 2, bb.y - hy / 2, hx, hy);
