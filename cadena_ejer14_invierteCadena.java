@@ -1,4 +1,8 @@
- import java.util.Scanner;
+/**
+* @author Maria drp
+*/
+
+import java.util.Scanner;
 
 public class cadena_ejer14_invierteCadena {
    

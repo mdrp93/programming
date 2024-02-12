@@ -1,4 +1,7 @@
 //Exercise 6.5 java
+/**
+* @author Maria drp
+*/
 
 import java.util.Scanner;
 

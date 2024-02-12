@@ -1,3 +1,6 @@
+/**
+* @author Maria drp
+*/
 /*
  Ejercicio 7
 Escribe un programa que genere 100 números aleatorios del 0 al 20 y que los

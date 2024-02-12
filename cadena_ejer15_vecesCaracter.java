@@ -1,6 +1,8 @@
+/**
+* @author Maria drp
+*/
 
-
-    import java.util.Scanner;
+import java.util.Scanner;
 
 public class cadena_ejer15_vecesCaracter {
         

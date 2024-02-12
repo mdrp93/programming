@@ -1,7 +1,12 @@
+/**
+* @author Maria drp
+*/
+//Exercise 2. Chapter 05. Rewritte Guess My number.
+
 import java.util.Scanner;
 import java.util.Random;
 
-//Exercise 2. Chapter 05. Rewritte Guess My number.
+
 
 public class libro_ch05_ejer2_myGuess2 {
     public static int mirror (int suppose, int number) {

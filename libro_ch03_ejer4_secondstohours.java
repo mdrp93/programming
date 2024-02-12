@@ -1,4 +1,6 @@
-
+/**
+* @author Maria drp
+*/
 import java.util.Scanner;
 
 /** Converts seconds to minutes and hours.*/

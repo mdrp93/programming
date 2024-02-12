@@ -1,3 +1,6 @@
+/**
+* @author Maria drp
+*/
 /*Ejercicio 13
 Escribe un programa que rellene un array de 100 elementos con números enteros aleatorios comprendidos entre 0 y 500 (ambos incluidos). A continuación
 el programa mostrará el array y preguntará si el usuario quiere destacar el

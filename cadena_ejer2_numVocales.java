@@ -1,3 +1,6 @@
+/**
+* @author Maria drp
+*/
 
 //EXERCISE STRINGS 2: Escribe la función “numeroVocales” a la que le pasamos una cadena y nos devuelve el número de vocales que hay en la cadena.
  

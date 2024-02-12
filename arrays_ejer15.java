@@ -1,3 +1,7 @@
+/**
+* @author Maria drp
+*/
+
 /*Ejercicio 15
 Un restaurante nos ha encargado una aplicación para colocar a los clientes en sus mesas. En una mesa se pueden sentar de 0 (mesa vacía) a 4 comensales
 (mesa llena). Cuando llega un cliente se le pregunta cuántos son. De momento el programa no está preparado para colocar a grupos mayores a 4, por tanto,

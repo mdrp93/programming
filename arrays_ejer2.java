@@ -1,4 +1,6 @@
-
+/**
+* @author Maria drp
+*/
 public class arrays_ejer2 {
 
 /*Ejercicio 2

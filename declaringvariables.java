@@ -1,3 +1,5 @@
+
+
 public class declaringvariables {
 
     public static void main(String[] args) {

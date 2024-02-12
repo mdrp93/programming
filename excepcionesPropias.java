@@ -1,3 +1,7 @@
+/**
+* @author Maria drp
+*/
+
 //import java.util.Scanner;
 
 public class excepcionesPropias {

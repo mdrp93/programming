@@ -1,5 +1,13 @@
-package pizzeria;
+/**
+*Pizza.java
+* Definición de la clase Pizza
+* @author Maria drp
+*/
+
 //ejer5_ch11_6 Atributos y métodos de clase (static)
+
+package pizzeria;
+
 
 
 public class Pizza {

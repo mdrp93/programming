@@ -1,3 +1,7 @@
+/**
+* @author Maria drp
+*/
+
 package reloj;
 
 import java.util.Scanner;

@@ -1,4 +1,6 @@
-
+/**
+* @author Maria drp
+*/
 import java.math.BigInteger;
 
 public class libro_ch09_ejer2 { //big.java

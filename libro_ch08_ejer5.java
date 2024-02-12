@@ -1,3 +1,7 @@
+/**
+* @author Maria drp
+*/
+
 import java.util.Scanner;
 
 public class libro_ch08_ejer5 {

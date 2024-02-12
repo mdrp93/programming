@@ -1,3 +1,6 @@
+/**
+* @author Maria drp
+*/
 
 import java.util.Scanner;
 

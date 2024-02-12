@@ -1,3 +1,9 @@
+/**
+* Reloj
+* Definición de Tiempo
+* @author Maria drp
+*/
+
 package reloj;
 
 public class Tiempo {

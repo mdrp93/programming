@@ -1,5 +1,8 @@
 
 //Exercise 3. Chapter 05. Fermat’s Last Theorem says that there are no integers a, b, c, and n such that an + bn = cn [except when n ≤ 2].
+/**
+* @author Maria drp
+*/
 
 import java.util.Scanner;
 

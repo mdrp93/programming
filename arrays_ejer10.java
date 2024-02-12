@@ -1,3 +1,6 @@
+/**
+* @author Maria drp
+*/
 /*
 Ejercicio 10
 Escribe un programa que genere 20 números enteros aleatorios entre 0 y 100 y que los almacene en un array. 

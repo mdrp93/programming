@@ -1,3 +1,8 @@
+/**
+* Pizzeria
+* Definición de PedidosPizza
+* @author Maria drp
+*/
 package pizzeria;
 
 public class PedidosPizza {

@@ -1,3 +1,6 @@
+/**
+* @author Maria drp
+*/
 import java.util.Scanner;
 
 public class libro_ch07_ejer5_factors {

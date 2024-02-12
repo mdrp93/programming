@@ -1,4 +1,6 @@
-
+/**
+* @author Maria drp
+*/
 public class cadena_ejer20_quitaTodosEspacios {
   
  

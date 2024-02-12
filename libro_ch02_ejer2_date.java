@@ -1,3 +1,7 @@
+/**
+* @author Maria drp
+*/
+
 public class libro_ch02_ejer2_date {
 
     public static void main(String[] args) {

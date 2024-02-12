@@ -1,4 +1,6 @@
-
+/**
+* @author Maria drp
+*/
 import java.util.Scanner;
 
 public class libro_ch04_ejer6_multadd {

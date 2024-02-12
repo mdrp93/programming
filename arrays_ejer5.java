@@ -1,4 +1,6 @@
-
+/**
+* @author Maria drp
+*/
 /*Ejercicio 5
 Escribe un programa que pida 10 números por teclado y que luego muestre
 los números introducidos junto con las palabras “máximo” y “mínimo” al lado

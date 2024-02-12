@@ -1,5 +1,7 @@
 //Exercise 6.4 java
- 
+ /**
+* @author Maria drp
+*/
 import java.util.Scanner;
 
 public class libro_ch06_ejer4_isAbecedarian{

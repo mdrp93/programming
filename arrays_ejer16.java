@@ -4,6 +4,10 @@ el programa mostrará el array y preguntará si el usuario quiere resaltar los m
 el array escribiendo los números que se quieren resaltar entre corchetes.
 */
 
+/**
+* @author Maria drp
+*/
+
 import java.util.Random;
 import java.util.Scanner;
 

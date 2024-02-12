@@ -1,3 +1,7 @@
+/**
+* @author Maria drp
+*/
+
 public class libro_ch08_ejer1 {
 
     public static void main(String[] args) {

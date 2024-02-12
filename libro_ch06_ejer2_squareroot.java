@@ -1,5 +1,7 @@
 //Exercise 6.2 java
-
+/**
+* @author Maria drp
+*/
 import java.util.Scanner;
 
 public class libro_ch06_ejer2_squareroot{

@@ -1,3 +1,6 @@
+/**
+* @author Maria drp
+*/
 /*
 Ejercicio 8
 Realiza un programa que pida la temperatura media que ha hecho en cada mes de un determinado año y que muestre a continuación un diagrama de barras
