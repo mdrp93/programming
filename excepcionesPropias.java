@@ -38,7 +38,7 @@ public static boolean onlyLetters(String palabra) { //The purpose of this method
         }
         return true;
     }
-}
+
 
 //EJEMPLO DE MAIN DE ONLYLETTER:
 //String word = in.nextLine();
