@@ -81,7 +81,16 @@ public class GridCanvas extends Canvas {
      * @param c column index
      * @return 1 or 0
      */
+    
     public int test(int r, int c) {
+
+/*EXERCISE 15.2: Modify the test method so that the cells 'wrap around' on the edges. */
+    
+        int rows = numRows();
+        int cols = numCols();
+        r = (r + rows) % rows;
+        c = (c + cols) % cols;
+        
         try {
             if (array[r][c].isOn()) {
                 return 1;
@@ -91,5 +100,26 @@ public class GridCanvas extends Canvas {
         }
         return 0;
     }
+
+
+/*EXERCISE 15.1: write a method named countOn that returns the total number of cells that are “on”. */ 
+    
+    public int countOn() {
+        // Crea una variable para contar las celdas encendidas y  obtienemos el número de filas y columnas en la cuadrícula
+        int count = 0;  
+        int rows = numRows();
+        int cols = numCols();
+        
+        for (int r = 0; r < rows; r++) {
+            for (int c = 0; c < cols; c++) {
+                // Verifica si la celda actual está encendida
+                if (getCell(r, c).isOn()) {
+                    count++;    //Incrementamos el contador si la celda está encendida
+                }
+            }
+        }
+        return count; //nos devuelve el total de celdas encendidas
+    }
+    
 
 }

@@ -1,29 +1,59 @@
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
 import javax.swing.JFrame;
 
-public class Conway {
+public class ConwayGlider {
 
     private GridCanvas grid;
     private int prevCount = Integer.MAX_VALUE;
 
     /*Creates a grid with two Blinkers.*/
 
-   public Conway() {    //constructor
-        grid = new GridCanvas(5, 10, 20);
-        grid.turnOn(2, 1);
-        grid.turnOn(2, 2);
-        grid.turnOn(2, 3);
-        grid.turnOn(1, 7);
-        grid.turnOn(2, 7);
-        grid.turnOn(3, 7);
+    public ConwayGlider(String path) {
+        try {
+            File file = new File(path);
+            Scanner scan = new Scanner(file);
+               
+            // ArrayList para almacenar las líneas que representan la cuadrícula
+            ArrayList<String> lines = new ArrayList<>();
+            
+            while (scan.hasNextLine()) {
+                String line = scan.nextLine().trim();
+                if (!line.startsWith("!") && !line.isEmpty()) {
+                    lines.add(line);
+                }
+            }
+            
+            // Determinar el número de filas y columnas de la cuadrícula
+            int rows = lines.size();
+            int cols = lines.get(0).length();
+            int size = (rows+1)*(cols+1); //tamaño ajustado a las lineas y columnas que hay en el archivo .cells
+
+            // Inicializar la cuadrícula
+            grid = new GridCanvas(rows, cols, size);
+            
+            // Inicializar la cuadrícula basada en los datos leídos
+            for (int r = 0; r < rows; r++) {
+                String row = lines.get(r);
+                for (int c = 0; c < cols; c++) {
+                    char cell = row.charAt(c);
+                    if (cell == 'O') {
+                        grid.turnOn(r, c);
+                    }
+                }
+            }
+            scan.close();
+            
+        } catch (FileNotFoundException e) {
+            // Imprimir la traza de la excepción y salir con estado de error
+            e.printStackTrace();
+            System.exit(1);
+        }
     }
-  
     
-    /**
-     * Counts the number of live neighbors around a cell.
-     * @param r row index
-     * @param c column index
-     * @return number of live neighbors
-     */
+   
     private int countAlive(int r, int c) {
         int count = 0;
         count += grid.test(r - 1, c - 1);
@@ -37,11 +67,7 @@ public class Conway {
         return count;
     }
 
-    /**
-     * Apply the update rules of Conway's Game of Life.
-     * @param cell the cell to update
-     * @param count number of live neighbors
-     */
+
     private static void updateCell(Cell cell, int count) {
         if (cell.isOn()) {
             if (count < 2 || count > 3) {
@@ -57,10 +83,7 @@ public class Conway {
         }
     }
 
-    /**
-     * Counts the neighbors before changing anything.
-     * @return number of neighbors for each cell
-     */
+ 
     private int[][] countNeighbors() {  
         int rows = grid.numRows();
         int cols = grid.numCols();
@@ -74,10 +97,7 @@ public class Conway {
         return counts;
     }
 
-    /**
-     * Updates each cell based on neighbor counts.
-     * @param counts number of neighbors for each cell
-     */
+   
     private void updateGrid(int[][] counts) {
         int rows = grid.numRows();
         int cols = grid.numCols();
@@ -163,7 +183,7 @@ public class Conway {
     
     public static void main(String[] args) {
         String title = "Conway's Game of Life";
-        Conway game = new Conway();
+        ConwayGlider game = new ConwayGlider("glider.cells");
         JFrame frame = new JFrame(title);  //ventana de la cuadricula principal 
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); //Comportamiento de cierre, otras opciones: (JFrame.DO_NOTHING_ON_CLOSE no realiza ninguna acción), (JFrame.HIDE_ON_CLOSE se oculta pero no cierra app), (JFrame.DISPOSE_ON_CLOSE si es la unica ventana se cierra app)
         frame.setResizable(false); //deshabilitar el redimensionamiento de la ventana
