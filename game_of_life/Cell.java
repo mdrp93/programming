@@ -53,14 +53,4 @@ public class Cell {
         state = 1;
     }
 
-    public boolean isTransitional() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'isTransitional'");
-    }
-
-    public void transition() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'transition'");
-    }
-
 }

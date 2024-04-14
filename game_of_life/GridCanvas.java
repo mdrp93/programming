@@ -3,6 +3,7 @@ import java.awt.Graphics;
 
 
 public class GridCanvas extends Canvas {
+
     
     private Cell[][] array;  //Cells stored in row-major order. 
 
@@ -49,11 +50,11 @@ public class GridCanvas extends Canvas {
 
     /* Métodos de consulta */
 
-    public static int numRows() {   //Gets the number of rows.
+    public int numRows() {   //Gets the number of rows.
         return array.length;
     }
 
-    public static int numCols() {    //Gets the number of columns.
+    public int numCols() {    //Gets the number of columns.
         return array[0].length;  
     }
 
