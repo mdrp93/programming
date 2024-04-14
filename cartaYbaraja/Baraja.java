@@ -1,9 +1,7 @@
 /**
- * JAVA: Ejerciciós de Clases y Objetós (1): Carta y Baraja 
+ * JAVA: Ejerciciós de Clases y Objetós (1): Carta y Baraja - JUEGO 7 Y MEDIA
  * @author Maria DrP
 */
-
-package relacionEjerJava.cartaYbaraja;
 
 import java.util.List;
 import java.util.ArrayList;
@@ -13,14 +11,16 @@ import java.util.Random;
 public class Baraja {
     
     private ArrayList<Carta> listaCartas;
+    private Carta ultimaCartaRobada; 
 /*
 * CONSTRUCTORES
 */
     // Baraja vacía
     public Baraja() {
         listaCartas = new ArrayList<Carta>(40);
+        ultimaCartaRobada = null; // Inicialmente no hay ninguna carta robada
     }
-
+    
     // Baraja del tipo especificado
     public Baraja(int tipoBaraja) {
         this();
@@ -40,10 +40,26 @@ public class Baraja {
             barajar();
         }
     }
+    
 
 /*
 * MÉTODOS
 */
+    
+      // Método para robar una carta
+      public Carta robar() {
+        if (listaCartas.isEmpty()) {
+            throw new IllegalStateException("La baraja está vacía.");
+        }
+        Carta cartaRobada = listaCartas.remove(0);
+        ultimaCartaRobada = cartaRobada; // Actualizar la última carta robada
+        return cartaRobada;
+    }
+
+    // Método para obtener la última carta robada
+    public Carta getUltimaCartaRobada() {
+        return ultimaCartaRobada;
+    }
     // Iicializar baraja con el número de cartas especificado
     private void inicializarBaraja(int numCartas) {
         for (int i = 1; i <= numCartas; i++) {
@@ -63,13 +79,6 @@ public class Baraja {
         listaCartas.addAll(listaCortada);
     }
 
-    //Robar una carta de la baraja
-    public Carta robar() {
-        if (listaCartas.isEmpty()) {
-            throw new IllegalStateException("La baraja está vacía.");
-        }
-        return listaCartas.remove(0);
-    }
 
     //Insertar una carta al final o al principio de la baraja
     public void insertarCartaFinal(int idCarta) {

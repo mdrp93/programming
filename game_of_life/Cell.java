@@ -1,7 +1,6 @@
 import java.awt.Color;
 import java.awt.Graphics;
 
-
 public class Cell {
 
     public static final Color[] COLORS = {Color.WHITE, Color.BLACK};
