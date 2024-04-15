@@ -154,7 +154,7 @@ public class Cartas {
     private ImageIcon cargarIcono(String nombreCarta) {
     
         String ruta = rutasCartas.get(nombreCarta);
-        if (ruta != null && ruta.equals(nombreCarta)) {
+        if (ruta != null || ruta.equals(nombreCarta)) {
             ImageIcon iconoOriginal = new ImageIcon(getClass().getResource(ruta));
             Image imagenEscalada = iconoOriginal.getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
             return new ImageIcon(imagenEscalada);
