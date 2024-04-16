@@ -59,23 +59,22 @@ public class Juego7ymedia extends JPanel {
         botonPlantarse = new JButton(iconoPlantarseEscalado);
         botonReinicio = new JButton(iconoReinicioEscalado);
 
+        
         botonPedirCarta.addActionListener(new ActionListener() {
-
-            public void actionPerformed(ActionEvent e) {
-                Cartas carta = baraja.robar();
-                puntuacionPersona += carta.valor7ymedia();
-
-                if (puntuacionPersona > 7.5) {
-                    areaTexto.append("\n"+usuario+" recibe carta: \n" + carta.getNombreCarta().toUpperCase()
-                            + ".\n \nTu puntuación actual es: " + puntuacionPersona + "\n\n¡Te has pasado de 7.5!" + "\n Has perdido.\n");
-                    finJuego();
-                } else {
-                    areaTexto.append("\n"+usuario+" recibe carta: \n" + carta.getNombreCarta().toUpperCase()
-                            + ".\n \nTu puntuación actual es: " + puntuacionPersona + "\n");
-
-                }
+        public void actionPerformed(ActionEvent e) {
+            Cartas carta = baraja.robar();
+            puntuacionPersona += carta.valor7ymedia();
+            if (puntuacionPersona > 7.5) {
+                areaTexto.append("\n"+usuario+" recibe carta: \n" + carta.getNombreCarta().toUpperCase()
+                        + ".\n \nTu puntuación actual es: " + puntuacionPersona + "\n\n¡Te has pasado de 7.5!" + "\n Has perdido.\n");
+                finJuego();
+            } else {
+                areaTexto.append("\n"+usuario+" recibe carta: \n" + carta.getNombreCarta().toUpperCase()
+                        + ".\n \nTu puntuación actual es: " + puntuacionPersona + "\n");
             }
+        }
         });
+
 
         botonReinicio.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {

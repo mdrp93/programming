@@ -23,6 +23,8 @@ public class App7ymedia extends JFrame {
         setLocationRelativeTo(null); // Centra la ventana en la pantalla
         setVisible(true); // Hace visible la ventana
     }
+
+    
     
     public static void main(String[] args) {
         SwingUtilities.invokeLater(() -> new App7ymedia());
