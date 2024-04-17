@@ -1,5 +1,4 @@
 
-
 /**
  * JAVA: Ejerciciós de Clases y Objetós (1): Carta y Baraja - JUEGO 7 Y MEDIA
  * @author Maria DrP
@@ -10,8 +9,6 @@ public class Cartas {
     private int palo;
  
    
-
-
 /**
  * CONSTRUCTORES 
  */

@@ -18,10 +18,17 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://"""").
 
 
+
+
+
 JUEGO 7 Y MEDIA: 
 
 Atribución de @autor de imagenes:
 
     icono_cartas: ("https://www.flaticon.es/iconos-gratis/tarjetas")
     plantarse: ("https://www.flaticon.es/iconos-gratis/di-no")
-    reinicio: (<a href="https://www.flaticon.es/iconos-gratis/reiniciar")
+    reinicio: (<a href="https://www.flaticon.es/iconos-gratis/reiniciar");
+
+
+
+Primer proyezco de crear una interfaz tomando la idea de uno de los ejercicios propuestos. 
