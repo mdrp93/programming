@@ -6,10 +6,6 @@ import java.awt.*;
  * JAVA: Ejerciciós de Clases y Objetós (1): Carta y Baraja - JUEGO 7 Y MEDIA
  * @author Maria DrP
 */
-/**
- * JAVA: Ejerciciós de Clases y Objetós (1): Carta y Baraja - JUEGO 7 Y MEDIA
- * @author Maria DrP
-*/
 
 public class App7ymedia extends JFrame {
  

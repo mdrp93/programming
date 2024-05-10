@@ -1,5 +1,5 @@
 
-//libro_ch10_ejer4.java         /*A Rational number is a number that can be expressed as the quotient or fraction of two integers, a numerator, and a denominator, where the denominator is not zero. */
+//libro_ch11_ejer4.java         /*A Rational number is a number that can be expressed as the quotient or fraction of two integers, a numerator, and a denominator, where the denominator is not zero. */
 
 
 public class Rational {         //Define a class called Rational. A Rational object should have two integer instance variables that store the numerator and denominator.
